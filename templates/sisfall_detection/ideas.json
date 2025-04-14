@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "cost_sensitive_regularization",
+        "Title": "Cost Sensitive Regularization for Fall Detection",
+        "Experiment": "One way to address the data imbalance issue is to use class-sensitive costs. This involves assigning different costs to different types of misclassifications. For example, classifying fall events as normal activities could result in a disaster, while classifying normal activities as alert just gives false alarms. Cost-sensitive regularization combines the base loss with a cost-sensitive loss. We can experiment with different lambdas and observe their impact on model performance.",
+        "Interestingness": 9,
+        "Feasibility": 9,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "temporal_context_attention",
+        "Title": "Temporal Context-Aware Fall Detection using Consecutive Window Attention",
+        "Experiment": "Modify the LSTM model to incorporate information from the previous window. Add an attention mechanism that computes similarity scores between current and previous window embeddings. Concatenate the attention-weighted previous window features with current window features before final classification. Compare detection accuracy and false alarm rates with baseline. Analyze the attention weights to understand transition patterns between normal activity and falls.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": false
+    }
+]
